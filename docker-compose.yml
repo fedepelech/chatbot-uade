@@ -1,0 +1,28 @@
+services:
+  mcp-server:
+    build:
+      context: ./backend
+    ports:
+      - "4000:4000"
+    environment:
+      - OLLAMA_URL=http://ollama:11434
+      - LLM_MODEL=llama3.2:3b-instruct-q4_K_M
+      - LLM_KEEP_ALIVE=1h
+      - LLM_NUM_PREDICT=512
+      - LLM_NUM_THREAD=4
+    depends_on:
+      - ollama
+    restart: unless-stopped
+
+  ollama:
+    build:
+      context: ./ollama
+      dockerfile: Dockerfile
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_models:/root/.ollama/models
+    restart: unless-stopped
+
+volumes:
+  ollama_models:
