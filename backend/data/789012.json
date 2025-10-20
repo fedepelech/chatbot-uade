@@ -1,0 +1,277 @@
+{
+  "id_alumno": "2023789012",
+  "datos_personales": {
+    "identificacion": {
+      "nombre": "Juan",
+      "apellido": "Rodríguez",
+      "segundo_apellido": "",
+      "nombre_completo": "Juan Rodríguez",
+      "documento": {
+        "tipo": "DNI",
+        "numero": "41.987.654",
+        "pais_emision": "Argentina"
+      },
+      "fecha_nacimiento": "2002-08-22",
+      "edad": 22,
+      "genero": "Masculino",
+      "nacionalidad": "Argentina",
+      "estado_civil": "Soltero"
+    },
+    "contacto": {
+      "telefono_personal": "+54 11 5555-1234",
+      "telefono_alternativo": "+54 11 5555-5678",
+      "email_personal": "juan.rodriguez@gmail.com",
+      "email_institucional": "jrodriguez@mail.uade.edu.ar"
+    },
+    "direccion": {
+      "calle": "Av. Santa Fe",
+      "numero": "3456",
+      "piso": "8",
+      "departamento": "A",
+      "codigo_postal": "C1425BGK",
+      "barrio": "Palermo",
+      "ciudad": "Ciudad Autónoma de Buenos Aires",
+      "provincia": "CABA",
+      "pais": "Argentina"
+    },
+    "contacto_emergencia": {
+      "nombre": "Laura Rodríguez",
+      "parentesco": "Madre",
+      "telefono": "+54 11 5555-9999",
+      "email": "laura.rodriguez@email.com"
+    }
+  },
+  "datos_carrera": {
+    "informacion_academica": {
+      "numero_legajo": "789012",
+      "fecha_ingreso": "2023-03-01",
+      "tipo_ingreso": "Directo",
+      "estado_academico": "Regular",
+      "modalidad": "Presencial",
+      "turno": "Tarde",
+      "sede": "Lima"
+    },
+    "carrera": {
+      "codigo": "ING-INF-001",
+      "nombre": "Ingeniería en Informática",
+      "titulo": "Ingeniero/a en Informática",
+      "duracion_años": 5,
+      "plan_estudios": "2022",
+      "facultad": "Facultad de Ingeniería y Ciencias Exactas",
+      "departamento": "Informática"
+    },
+    "progreso_academico": {
+      "año_cursada": 2,
+      "cuatrimestre_actual": "Segundo Cuatrimestre 2024",
+      "promedio_general": 8.9,
+      "promedio_ponderado": 9.1,
+      "cantidad_materias_aprobadas": 12,
+      "cantidad_materias_cursando": 5
+    }
+  },
+  "historial_academico": {
+    "materias_aprobadas": [
+      {
+        "codigo": "MAT-101",
+        "nombre": "Análisis Matemático I",
+        "cuatrimestre": "1C2023",
+        "año": 2023,
+        "estado": "Aprobada",
+        "nota_final": 9,
+        "modalidad": "Presencial",
+        "profesor": "Dr. Roberto Fernández"
+      },
+      {
+        "codigo": "INF-101",
+        "nombre": "Introducción a la Programación",
+        "cuatrimestre": "1C2023",
+        "año": 2023,
+        "estado": "Aprobada",
+        "nota_final": 10,
+        "modalidad": "Presencial",
+        "profesor": "Ing. Patricia Gómez"
+      },
+      {
+        "codigo": "FIS-101",
+        "nombre": "Física I",
+        "cuatrimestre": "1C2023",
+        "año": 2023,
+        "estado": "Aprobada",
+        "nota_final": 8,
+        "modalidad": "Presencial",
+        "profesor": "Dr. Carlos Méndez"
+      }
+    ],
+    "resumen": {
+      "total_materias_aprobadas": 12,
+      "total_creditos_obtenidos": 96,
+      "promedio_historico": 8.9
+    }
+  },
+  "cursada_actual": {
+    "cuatrimestre": "2024-2",
+    "fecha_inicio": "2024-08-05",
+    "fecha_fin": "2024-12-15",
+    "materias": [
+      {
+        "codigo": "INF-301",
+        "nombre": "Algoritmos y Estructuras de Datos",
+        "creditos": 8,
+        "profesor": "Ing. Martín López",
+        "horarios": [
+          {
+            "dia": "Martes",
+            "hora_inicio": "14:00",
+            "hora_fin": "18:00",
+            "aula": "Aula 205"
+          }
+        ],
+        "asistencia": {
+          "clases_totales": 12,
+          "clases_asistidas": 12,
+          "porcentaje": 100
+        }
+      },
+      {
+        "codigo": "INF-302",
+        "nombre": "Bases de Datos",
+        "creditos": 8,
+        "profesor": "Lic. Sandra Ruiz",
+        "horarios": [
+          {
+            "dia": "Jueves",
+            "hora_inicio": "14:00",
+            "hora_fin": "18:00",
+            "aula": "Aula 301"
+          }
+        ],
+        "asistencia": {
+          "clases_totales": 12,
+          "clases_asistidas": 11,
+          "porcentaje": 91.7
+        }
+      }
+    ]
+  },
+  "examenes_pendientes": {
+    "cantidad_total": 0,
+    "materias": []
+  },
+  "cuenta_corriente": {
+    "resumen": {
+      "saldo_total": 0,
+      "cuotas_pendientes": 0,
+      "cuotas_vencidas": 0,
+      "proximo_vencimiento": "2024-11-10",
+      "monto_proximo_vencimiento": 0
+    },
+    "cuotas": [
+      {
+        "numero_cuota": 9,
+        "periodo": "2024-09",
+        "fecha_vencimiento": "2024-09-10",
+        "monto_original": 50000,
+        "monto_pagado": 50000,
+        "saldo": 0,
+        "estado": "Pagada",
+        "fecha_pago": "2024-09-05",
+        "metodo_pago": "Transferencia bancaria"
+      },
+      {
+        "numero_cuota": 10,
+        "periodo": "2024-10",
+        "fecha_vencimiento": "2024-10-10",
+        "monto_original": 50000,
+        "monto_pagado": 50000,
+        "saldo": 0,
+        "estado": "Pagada",
+        "fecha_pago": "2024-10-08",
+        "metodo_pago": "Débito automático"
+      }
+    ],
+    "metodos_pago_disponibles": [
+      "Transferencia bancaria",
+      "Tarjeta de crédito",
+      "Tarjeta de débito",
+      "Débito automático",
+      "Pago Fácil",
+      "RapiPago",
+      "MercadoPago"
+    ]
+  },
+  "becas": {
+    "becas_activas": [
+      {
+        "id_beca": "BEC-2024-001",
+        "nombre": "Beca de Excelencia Académica",
+        "tipo": "Mérito académico",
+        "porcentaje_cobertura": 50,
+        "monto_mensual": 25000,
+        "fecha_inicio": "2024-03-01",
+        "fecha_fin": "2024-12-31",
+        "estado": "Activa",
+        "requisitos": {
+          "promedio_minimo": 8.5,
+          "asistencia_minima": 85,
+          "regularidad": true
+        },
+        "renovable": true
+      }
+    ],
+    "historial_becas": [
+      {
+        "id_beca": "BEC-2023-002",
+        "nombre": "Beca de Excelencia Académica",
+        "tipo": "Mérito académico",
+        "porcentaje_cobertura": 40,
+        "periodo": "2023",
+        "estado": "Finalizada"
+      }
+    ],
+    "solicitudes_pendientes": []
+  },
+  "titulos": {
+    "en_curso": {
+      "titulo": "Ingeniero/a en Informática",
+      "codigo_carrera": "ING-INF-001",
+      "estado": "En curso",
+      "porcentaje_avance": 35.5,
+      "fecha_estimada_egreso": "2027-12"
+    },
+    "titulos_obtenidos": []
+  },
+  "datos_sistema": {
+    "acceso": {
+      "usuario_webcampus": "jrodriguez789012",
+      "fecha_alta_sistema": "2023-02-15",
+      "ultimo_acceso": "2024-10-18T10:15:00Z"
+    },
+    "servicios_habilitados": [
+      "WebCampus",
+      "Mi UADE",
+      "Biblioteca Digital",
+      "Campus Virtual",
+      "Portal de Pagos",
+      "Gimnasio UADE"
+    ],
+    "configuracion_notificaciones": {
+      "email": true,
+      "sms": true,
+      "push_app": true,
+      "tipos_habilitados": [
+        "Vencimiento de cuotas",
+        "Notas de exámenes",
+        "Inscripciones abiertas",
+        "Comunicados académicos",
+        "Eventos deportivos"
+      ]
+    }
+  },
+  "metadatos": {
+    "version_schema": "2.0",
+    "fecha_creacion": "2024-10-18T22:00:00Z",
+    "fecha_ultima_modificacion": "2024-10-18T22:00:00Z",
+    "sistema_origen": "SGA-UADE",
+    "responsable_datos": "Sistemas UADE"
+  }
+}

@@ -1,0 +1,17 @@
+/* Variables de color UADE */
+:root {
+  --uade-blue: #00405c;
+  --white: #ffffff;
+  --dark-bg: #1a1a1a;
+  --light-gray: #f5f5f5;
+  --text-dark: #333333;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-bg);
+}

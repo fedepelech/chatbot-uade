@@ -1,0 +1,314 @@
+{
+  "id_alumno": "20241125669",
+  "datos_personales": {
+    "identificacion": {
+      "nombre": "María",
+      "apellido": "González",
+      "segundo_apellido": "López",
+      "nombre_completo": "María González López",
+      "documento": {
+        "tipo": "DNI",
+        "numero": "42.123.456",
+        "pais_emision": "Argentina"
+      },
+      "fecha_nacimiento": "2003-05-15",
+      "edad": 21,
+      "genero": "Femenino",
+      "nacionalidad": "Argentina",
+      "estado_civil": "Soltera"
+    },
+    "contacto": {
+      "telefono_personal": "+54 11 1234-5678",
+      "telefono_alternativo": "+54 11 8765-4321",
+      "email_personal": "maria.gonzalez@gmail.com",
+      "email_institucional": "mgonzalez@mail.uade.edu.ar"
+    },
+    "direccion": {
+      "calle": "Av. Corrientes",
+      "numero": "1234",
+      "piso": "5",
+      "departamento": "B",
+      "codigo_postal": "C1043AAZ",
+      "barrio": "San Nicolás",
+      "ciudad": "Ciudad Autónoma de Buenos Aires",
+      "provincia": "CABA",
+      "pais": "Argentina"
+    },
+    "contacto_emergencia": {
+      "nombre": "Carlos González",
+      "parentesco": "Padre",
+      "telefono": "+54 11 9876-5432",
+      "email": "carlos.gonzalez@empresa.com"
+    }
+  },
+  "datos_carrera": {
+    "informacion_academica": {
+      "numero_legajo": "1125669",
+      "fecha_ingreso": "2024-03-01",
+      "tipo_ingreso": "Directo",
+      "estado_academico": "Regular",
+      "modalidad": "Presencial",
+      "turno": "Mañana",
+      "sede": "Monserrat"
+    },
+    "carrera": {
+      "codigo": "LIC-ADM-001",
+      "nombre": "Licenciatura en Administración de Empresas",
+      "titulo": "Licenciado/a en Administración de Empresas",
+      "duracion_años": 4,
+      "plan_estudios": "2023",
+      "facultad": "Facultad de Ciencias Económicas",
+      "departamento": "Administración"
+    },
+    "progreso_academico": {
+      "año_cursada": 1,
+      "cuatrimestre_actual": "Primer Cuatrimestre 2024",
+      "promedio_general": 7.5,
+      "promedio_ponderado": 7.8,
+      "cantidad_materias_aprobadas": 3,
+      "cantidad_materias_cursando": 6
+    }
+  },
+  "historial_academico": {
+    "materias_aprobadas": [
+      {
+        "codigo": "MAT-001",
+        "nombre": "Matemática I",
+        "cuatrimestre": "1C2024",
+        "año": 2024,
+        "estado": "Aprobada",
+        "nota_final": 8,
+        "modalidad": "Presencial",
+        "profesor": "Dr. Juan Pérez"
+      },
+      {
+        "codigo": "ADM-001",
+        "nombre": "Introducción a la Administración",
+        "cuatrimestre": "1C2024",
+        "año": 2024,
+        "estado": "Aprobada",
+        "nota_final": 7,
+        "modalidad": "Presencial",
+        "profesor": "Lic. Ana Martínez"
+      },
+      {
+        "codigo": "ECO-001",
+        "nombre": "Economía General",
+        "cuatrimestre": "1C2024",
+        "año": 2024,
+        "estado": "Aprobada",
+        "nota_final": 8,
+        "modalidad": "Presencial",
+        "profesor": "Mg. Roberto Silva"
+      }
+    ],
+    "estadisticas": {
+      "total_materias_aprobadas": 3,
+      "promedio_historico": 7.67,
+      "nota_maxima": 8,
+      "nota_minima": 7
+    }
+  },
+  "cursada_actual": {
+    "cuatrimestre": "2C2024",
+    "materias": [
+      {
+        "codigo": "MAT-002",
+        "nombre": "Matemática II",
+        "cuatrimestre": "2C2024",
+        "año": 2024,
+        "estado": "Cursando",
+        "notas_parciales": [7, 6],
+        "promedio_parciales": 6.5,
+        "modalidad": "Presencial",
+        "profesor": "Dr. Juan Pérez",
+        "horarios": [
+          {
+            "dia": "Lunes",
+            "hora_inicio": "08:00",
+            "hora_fin": "10:00",
+            "aula": "A-201"
+          },
+          {
+            "dia": "Miércoles",
+            "hora_inicio": "08:00",
+            "hora_fin": "10:00",
+            "aula": "A-201"
+          }
+        ]
+      },
+      {
+        "codigo": "CON-001",
+        "nombre": "Contabilidad I",
+        "cuatrimestre": "2C2024",
+        "año": 2024,
+        "estado": "Cursando",
+        "notas_parciales": [8.1, 7.9],
+        "promedio_parciales": 8.0,
+        "modalidad": "Presencial",
+        "profesor": "CPN María López",
+        "horarios": [
+          {
+            "dia": "Martes",
+            "hora_inicio": "10:00",
+            "hora_fin": "12:00",
+            "aula": "B-105"
+          },
+          {
+            "dia": "Jueves",
+            "hora_inicio": "10:00",
+            "hora_fin": "12:00",
+            "aula": "B-105"
+          }
+        ]
+      }
+    ],
+    "resumen_horario": {
+      "dias_cursada": ["Lunes", "Martes", "Miércoles", "Jueves"],
+      "total_horas_semanales": 8,
+      "cantidad_materias": 2
+    }
+  },
+  "examenes_pendientes": {
+    "finales": [
+      {
+        "materia": "Estadística I",
+        "codigo": "EST-001",
+        "tipo": "Final",
+        "fecha_inscripcion_limite": "2024-11-15",
+        "turnos_disponibles": [
+          {
+            "fecha": "2024-12-02",
+            "hora": "09:00",
+            "aula": "C-301"
+          },
+          {
+            "fecha": "2024-12-16",
+            "hora": "14:00",
+            "aula": "C-302"
+          }
+        ]
+      }
+    ],
+    "cantidad_pendientes": 1
+  },
+  "cuenta_corriente": {
+    "estado_cuenta": {
+      "saldo_actual": -45750.00,
+      "estado": "Con deuda",
+      "ultima_actualizacion": "2024-10-17"
+    },
+    "metodo_pago": {
+      "debito_automatico": {
+        "activo": true,
+        "banco": "Banco Santander",
+        "tipo_cuenta": "Cuenta Corriente",
+        "numero_cuenta": "****-****-****-1234",
+        "titular": "María González",
+        "fecha_alta": "2024-02-15"
+      },
+      "medios_disponibles": [
+        "Débito automático",
+        "Transferencia bancaria",
+        "Pago con QR",
+        "Red Banelco",
+        "Red Link",
+        "Provincia Net"
+      ]
+    },
+    "historial_pagos": [
+      {
+        "fecha": "2024-03-12",
+        "concepto": "Matrícula 2024",
+        "importe": 43500.00,
+        "medio_pago": "Transferencia bancaria",
+        "numero_comprobante": "TRF-2024-001234",
+        "banco": "Banco Santander"
+      },
+      {
+        "fecha": "2024-03-08",
+        "concepto": "Cuota Marzo 2024",
+        "importe": 73875.00,
+        "medio_pago": "Débito automático",
+        "numero_comprobante": "DA-2024-003456",
+        "banco": "Banco Santander"
+      }
+    ],
+    "beneficios_financieros": [
+      {
+        "tipo": "Descuento familiar",
+        "descripcion": "2° hermano en UADE",
+        "porcentaje": 10,
+        "aplicable_a": ["cuotas_mensuales"],
+        "vigencia": "2024"
+      },
+      {
+        "tipo": "Descuento pago adelantado",
+        "descripcion": "Pago semestre completo",
+        "porcentaje": 5,
+        "aplicable_a": ["cuotas_mensuales"],
+        "condiciones": "Pago antes del 15 de cada semestre"
+      }
+    ]
+  },
+  "becas": {
+    "becas_activas": [
+      {
+        "tipo": "Beca de Excelencia Académica",
+        "porcentaje_descuento": 25,
+        "fecha_inicio": "2024-03-01",
+        "fecha_fin": "2024-12-31",
+        "estado": "Activa",
+        "requisitos_mantenimiento": [
+          "Promedio mínimo 7.5",
+          "Regularidad académica",
+          "No adeudar cuotas"
+        ]
+      }
+    ],
+    "cantidad_becas": 1,
+    "descuento_total": 25
+  },
+  "titulos": {
+    "titulo_en_curso": {
+      "nombre": "Licenciado/a en Administración de Empresas",
+      "codigo_carrera": "LIC-ADM-001",
+      "estado": "En curso",
+      "porcentaje_avance": 7.5,
+      "fecha_estimada_egreso": null
+    },
+    "titulos_obtenidos": []
+  },
+  "datos_sistema": {
+    "acceso": {
+      "usuario_webcampus": "mgonzalez1125669",
+      "fecha_alta_sistema": "2024-02-20",
+      "ultimo_acceso": "2024-10-17T14:30:00Z"
+    },
+    "servicios_habilitados": [
+      "WebCampus",
+      "Mi UADE",
+      "Biblioteca Digital",
+      "Campus Virtual",
+      "Portal de Pagos"
+    ],
+    "configuracion_notificaciones": {
+      "email": true,
+      "sms": false,
+      "push_app": true,
+      "tipos_habilitados": [
+        "Vencimiento de cuotas",
+        "Notas de exámenes",
+        "Inscripciones abiertas",
+        "Comunicados académicos"
+      ]
+    }
+  },
+  "metadatos": {
+    "version_schema": "2.0",
+    "fecha_creacion": "2024-10-17T20:00:00Z",
+    "fecha_ultima_modificacion": "2024-10-17T20:00:00Z",
+    "sistema_origen": "SGA-UADE",
+    "responsable_datos": "Sistemas UADE"
+  }
+}

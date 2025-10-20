@@ -1,5 +1,18 @@
 services:
-  mcp-server:
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_URL=http://localhost:4000
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+
+  backend:
     build:
       context: ./backend
     ports:
@@ -7,22 +20,18 @@ services:
     environment:
       - OLLAMA_URL=http://ollama:11434
       - LLM_MODEL=llama3.2:3b-instruct-q4_K_M
-      - LLM_KEEP_ALIVE=1h
-      - LLM_NUM_PREDICT=512
-      - LLM_NUM_THREAD=4
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
     depends_on:
       - ollama
-    restart: unless-stopped
 
   ollama:
-    build:
-      context: ./ollama
-      dockerfile: Dockerfile
+    image: ollama/ollama:latest
     ports:
       - "11434:11434"
     volumes:
-      - ollama_models:/root/.ollama/models
-    restart: unless-stopped
+      - ollama_models:/root/.ollama
 
 volumes:
   ollama_models:

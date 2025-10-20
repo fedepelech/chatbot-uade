@@ -1,0 +1,12 @@
+{
+  "globalShortcut": "Ctrl+Space",
+  "mcpServers": {
+    "student-data": {
+      "command": "npx",
+      "args": [
+        "tsx",
+        "mcp-servers/student-data-server.ts"
+      ]
+    }
+  }
+}
