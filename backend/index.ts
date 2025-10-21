@@ -15,7 +15,7 @@ import {
 import { Tool } from "@langchain/core/tools";
 import { Client } from "@modelcontextprotocol/sdk/client";
 import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js";
-import { ChatOllama } from "@langchain/ollama";
+import { ChatOllama, OllamaEmbeddings } from "@langchain/ollama";
 
 // ES modules compatibility
 const __filename = fileURLToPath(import.meta.url);
@@ -534,6 +534,10 @@ async function initialize() {
         `[INIT] Modelo inicializado con ${allTools.length} tools disponibles`
     );
 
+    const embeddings = new OllamaEmbeddings({
+        baseUrl: "http://localhost:11434",
+        model: "nomic-embed-text"
+      });
     return { model: globalModelWithTools, tools: allTools, clients };
 }
 
