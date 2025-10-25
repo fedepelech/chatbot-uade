@@ -20,11 +20,13 @@ services:
     environment:
       - OLLAMA_URL=http://ollama:11434
       - LLM_MODEL=llama3.2:3b-instruct-q4_K_M
+      - CHROMA_URL=http://chromadb:8000
     volumes:
       - ./backend:/app
       - /app/node_modules
     depends_on:
       - ollama
+      - chromadb
 
   ollama:
     image: ollama/ollama:latest
@@ -33,5 +35,15 @@ services:
     volumes:
       - ollama_models:/root/.ollama
 
+  chromadb:
+    image: chromadb/chroma:latest
+    ports:
+      - "8000:8000"
+    volumes:
+      - chroma_data:/chroma/chroma
+    environment:
+      - CHROMA_SERVER_CORS_ALLOW_ORIGINS=["*"]
+
 volumes:
   ollama_models:
+  chroma_data:

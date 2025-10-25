@@ -41,7 +41,7 @@ export const sendMessage = async (message: string): Promise<string> => {
     console.log('[ChatService] Legajo:', legajo);
 
     // Llamada al endpoint /mcp del backend
-    const response = await fetch(`${API_URL}/mcp`, {
+    const response = await fetch(`${API_URL}/chat`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

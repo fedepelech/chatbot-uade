@@ -27,11 +27,12 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const ollamaUrl = process.env.OLLAMA_URL || "http://localhost:11434";
+const chromaUrl = process.env.CHROMA_URL || "http://localhost:8000";
 const DEFAULT_LLM_MODEL = process.env.LLM_MODEL || "llama3.2:3b-instruct-q4_K_M";
 const DEFAULT_KEEP_ALIVE = process.env.LLM_KEEP_ALIVE || "1h";
-const DEFAULT_NUM_PREDICT = Number(process.env.LLM_NUM_PREDICT || "512", 10);
+const DEFAULT_NUM_PREDICT = Number.parseInt(process.env.LLM_NUM_PREDICT || "512", 10);
 const DEFAULT_NUM_THREAD = process.env.LLM_NUM_THREAD
-    ? Number(process.env.LLM_NUM_THREAD, 10)
+    ? Number.parseInt(process.env.LLM_NUM_THREAD, 10)
     : undefined;
 
 const CONFIG_FILE_PATH = path.join(__dirname, "config/config.json");
@@ -42,6 +43,7 @@ let globalModelWithTools: ReturnType<ChatOllama["bindTools"]> | null = null;
 let globalTools: Tool[] = [];
 let globalVectorStore: any = null;
 let globalRAGChain: any = null;
+let globalLLM: ChatOllama | null = null;
 
 const app = express();
 
@@ -89,7 +91,7 @@ async function loadUADEKnowledge(filePath: string): Promise<Document[]> {
 // RAG: INDEXAR EN CHROMADB
 // ============================================
 
-async function initializeRAG(): Promise<{ vectorStore: any; ragChain: any }> {
+async function initializeRAG(llm: ChatOllama): Promise<{ vectorStore: any; ragChain: any }> {
     try {
         console.log("🔧 [RAG] Inicializando sistema RAG...");
         
@@ -104,11 +106,13 @@ async function initializeRAG(): Promise<{ vectorStore: any; ragChain: any }> {
         
         // 3. Crear vector store
         console.log("🔢 [RAG] Generando embeddings...");
+        console.log(`[RAG] Conectando a ChromaDB en: ${chromaUrl}`);
         const vectorStore = await Chroma.fromDocuments(
             documents,
             embeddings,
             {
-                collectionName: "uade_knowledge_base"
+                collectionName: "uade_knowledge_base",
+                url: chromaUrl
             }
         );
         
@@ -137,13 +141,8 @@ INSTRUCCIONES:
 
 RESPUESTA:`);
         
-        // 6. Crear RAG chain
-        const llm = new ChatOllama({
-            model: DEFAULT_LLM_MODEL,
-            keepAlive: DEFAULT_KEEP_ALIVE,
-            numThread: DEFAULT_NUM_THREAD,
-            temperature: 0.3
-        });
+        // 6. Crear RAG chain usando la instancia global de LLM
+        // Nota: Usamos directamente la instancia global, la temperatura se puede ajustar en la configuración inicial
         
         const formatDocs = (docs: any[]) => {
             return docs.map((doc, i) => 
@@ -412,7 +411,7 @@ async function loadServers(): Promise<IGetTools> {
     return { clients, allTools };
 }
 
-async function warmUpLLM(tools?: Tool[]) {
+async function warmUpLLM(llm: ChatOllama, tools?: Tool[]) {
     const maxAttempts = Number.parseInt(process.env.LLM_WARMUP_ATTEMPTS || "8", 10);
     const delayMs = Number.parseInt(process.env.LLM_WARMUP_DELAY_MS || "2000", 10);
     const warmOptions: WarmLLMOptions = { num_predict: 8 };
@@ -421,12 +420,7 @@ async function warmUpLLM(tools?: Tool[]) {
     for (let attempt = 1; attempt <= maxAttempts; attempt++) {
         try {
             if (tools && tools.length > 0) {
-                const model = new ChatOllama({
-                    model: DEFAULT_LLM_MODEL,
-                    keepAlive: DEFAULT_KEEP_ALIVE,
-                    numThread: DEFAULT_NUM_THREAD,
-                });
-                const modelWithTools = model.bindTools(tools);
+                const modelWithTools = llm.bindTools(tools);
                 await modelWithTools.invoke("ok");
                 console.log(`[LLM] Modelo precalentado con ${tools.length} tools`);
             } else {
@@ -604,7 +598,7 @@ Datos:`;
 // ENDPOINT PRINCIPAL HÍBRIDO
 // ============================================
 
-app.post("/mcp", async (req, res) => {
+app.post("/chat", async (req, res) => {
     try {
         const { payload } = req.body;
         const model = payload?.model || DEFAULT_LLM_MODEL;
@@ -685,29 +679,38 @@ app.post("/mcp", async (req, res) => {
 
 async function initialize() {
     try {
-        const { clients, allTools } = await loadServers();
-        globalClients = clients;
-        globalTools = allTools;
-        console.log(`[INIT] ${allTools.length} tools MCP cargadas`);
-
-        const { vectorStore, ragChain } = await initializeRAG();
-        globalVectorStore = vectorStore;
-        globalRAGChain = ragChain;
-        console.log("[INIT] Sistema RAG inicializado");
-
-        await warmUpLLM(allTools);
-
-        const model = new ChatOllama({
+        // 1. Crear instancia única de ChatOllama
+        console.log("[INIT] Creando instancia única de ChatOllama...");
+        console.log(`[INIT] Conectando a Ollama en: ${ollamaUrl}`);
+        globalLLM = new ChatOllama({
+            baseUrl: ollamaUrl,
             model: DEFAULT_LLM_MODEL,
             keepAlive: DEFAULT_KEEP_ALIVE,
             numThread: DEFAULT_NUM_THREAD,
         });
 
-        globalModelWithTools = model.bindTools(allTools);
+        // 2. Cargar MCP servers y tools
+        const { clients, allTools } = await loadServers();
+        globalClients = clients;
+        globalTools = allTools;
+        console.log(`[INIT] ${allTools.length} tools MCP cargadas`);
+
+        // 3. Inicializar RAG usando la instancia global
+        const { vectorStore, ragChain } = await initializeRAG(globalLLM);
+        globalVectorStore = vectorStore;
+        globalRAGChain = ragChain;
+        console.log("[INIT] Sistema RAG inicializado");
+
+        // 4. Precalentar el modelo
+        await warmUpLLM(globalLLM, allTools);
+
+        // 5. Crear modelo con tools bindeadas
+        globalModelWithTools = globalLLM.bindTools(allTools);
 
         console.log("\n✅ [INIT] Sistema híbrido RAG + MCP listo\n");
         console.log(`   📚 RAG: Consultas institucionales`);
-        console.log(`   🔧 MCP: ${allTools.length} tools para consultas personales\n`);
+        console.log(`   🔧 MCP: ${allTools.length} tools para consultas personales`);
+        console.log(`   🤖 LLM: Instancia única compartida\n`);
 
         return { model: globalModelWithTools, tools: allTools, clients };
     } catch (error) {
