@@ -1,3 +1,66 @@
+## 🧪 Pasos detallados para probar la aplicación
+
+1. **Iniciar servicios**
+   - `docker-compose up -d --build`
+   - Ver estado: `docker-compose ps`
+
+2. **Verificar servicios**
+   - Backend: http://localhost:4000/health
+   - Ollama: http://localhost:11434/api/tags
+   - ChromaDB: revisar logs con `docker-compose logs -f chromadb`
+
+3. **Configurar legajo en el frontend (localStorage)**
+   - Abrí http://localhost:3000 y la consola del navegador (F12 → Console)
+   - Establecer legajo:
+     ```javascript
+     localStorage.setItem('legajo', '1125669');
+     ```
+   - Verificar:
+     ```javascript
+     localStorage.getItem('legajo');
+     ```
+   - Borrar (para probar sin legajo):
+     ```javascript
+     localStorage.removeItem('legajo');
+     ```
+   - Nota: el frontend lee la clave `legajo` de localStorage y la envía al backend en el cuerpo del request (`payload.legajo`).
+
+4. **Probar desde el frontend** (http://localhost:3000)
+   - Consultas RAG (institucionales):
+     - "¿Cuál es el horario de atención?"
+     - "¿Dónde están las sedes de UADE?"
+     - "¿Qué son los Minors?"
+   - Consultas MCP (personales, requieren legajo):
+     - "¿Tengo exámenes pendientes?"
+     - "¿Cuánto debo?"
+     - "¿Cuáles son mis materias?"
+
+5. **Probar desde la terminal (opcional)**
+   - RAG (no requiere legajo):
+     ```bash
+     curl -X POST http://localhost:4000/chat \
+       -H "Content-Type: application/json" \
+       -d '{"payload": {"userPrompt": "¿Dónde están las sedes de UADE?"}}'
+     ```
+   - MCP (requiere legajo):
+     ```bash
+     curl -X POST http://localhost:4000/chat \
+       -H "Content-Type: application/json" \
+       -d '{"payload": {"userPrompt": "¿Tengo exámenes pendientes?", "legajo": "1125669"}}'
+     ```
+
+6. **Validar por logs**
+   - `docker-compose logs -f backend`
+   - Deberías ver líneas como:
+     - `[HYBRID] Intención: RAG/MCP`
+     - `[RAG] ...` o `[MCP] ...` según el tipo de consulta
+
+7. **Problemas comunes**
+   - MCP devuelve que falta legajo → configurá `localStorage.setItem('legajo', '1125669')` y reintentá.
+   - RAG falla al iniciar → verificá ChromaDB y que el modelo de embeddings esté disponible.
+   - Ollama no responde → revisá que esté corriendo y que los modelos se hayan descargado.
+
+
 # 🔄 Proceso de Desarrollo y Testing
 
 Guía rápida para probar cambios en el código cuando los contenedores ya están corriendo.
@@ -375,8 +438,8 @@ Antes de considerar un cambio completo:
 | Datos en /backend/data | ✅ Nada (se lee en próxima request) |
 | Config en /backend/config | ✅ Nada (se lee en próxima request) |
 | docker-compose.yml | 🔄 `docker-compose up -d` |
-| Dockerfile | 🔄 `docker-compose up -d --build` |
-| Cambiar modelo LLM | 🔄 `docker-compose restart backend` |
+ | Dockerfile | 🔄 `docker-compose up -d --build` |
+ | Cambiar modelo LLM | 🔄 `docker-compose restart backend` |
 
 ---
 
