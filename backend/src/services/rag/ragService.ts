@@ -1,13 +1,13 @@
-import { ChatOllama, OllamaEmbeddings } from "@langchain/ollama";
+import { OpenAIEmbeddings } from "@langchain/openai";
 import { Chroma } from "@langchain/community/vectorstores/chroma";
 import { RunnableSequence } from "@langchain/core/runnables";
 import { StringOutputParser } from "@langchain/core/output_parsers";
 import { loadUADEKnowledge } from "./knowledgeLoader.js";
 import { RAG_PROMPT_TEMPLATE, formatDocs } from "./prompts.js";
-import { ollamaUrl, chromaUrl, KNOWLEDGE_BASE_FILE_PATH } from "../../config/environment.js";
+import { chromaUrl, KNOWLEDGE_BASE_FILE_PATH, OPENAI_API_KEY } from "../../config/environment.js";
 import type { RAGInitResult } from "../../types/index.js";
 
-export async function initializeRAG(llm: ChatOllama): Promise<RAGInitResult> {
+export async function initializeRAG(llm: any): Promise<RAGInitResult> {
     try {
         console.log("🔧 [RAG] Inicializando sistema RAG...");
         
@@ -15,9 +15,9 @@ export async function initializeRAG(llm: ChatOllama): Promise<RAGInitResult> {
         const documents = await loadUADEKnowledge(KNOWLEDGE_BASE_FILE_PATH);
         
         // 2. Configurar embeddings
-        const embeddings = new OllamaEmbeddings({
-            baseUrl: ollamaUrl,
-            model: "nomic-embed-text"
+        const embeddings = new OpenAIEmbeddings({
+            model: "text-embedding-3-small",
+            openAIApiKey: OPENAI_API_KEY
         });
         
         // 3. Crear vector store
@@ -27,7 +27,7 @@ export async function initializeRAG(llm: ChatOllama): Promise<RAGInitResult> {
             documents,
             embeddings,
             {
-                collectionName: "uade_knowledge_base",
+                collectionName: "uade_knowledge_base_openai",
                 url: chromaUrl
             }
         );

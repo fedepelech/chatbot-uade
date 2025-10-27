@@ -1,0 +1,370 @@
+{
+  "items": [
+    {
+      "index": 0,
+      "question": "¿Cuál es el horario de atención de la Oficina de Alumnos?",
+      "reference": "La Oficina de Alumnos atiende de lunes a viernes de 9 a 20 hs en días hábiles.",
+      "prediction": "¡Hola! La Oficina de Alumnos atiende de lunes a viernes de 9 a 20 hs en días hábiles. Si necesitas más información, no dudes en acercarte durante ese horario. ¡Espero que esto te sea útil!"
+    },
+    {
+      "index": 1,
+      "question": "¿Cómo puedo contactar con la Oficina de Ingreso?",
+      "reference": "Podés escribir a ingreso@uade.edu.ar o enviar un WhatsApp al +54 9 11 7662-5199.",
+      "prediction": "Podés contactar con la Oficina de Ingreso a través del correo electrónico ingreso@uade.edu.ar o enviando un WhatsApp al +54 9 11 7662-5199. Ellos podrán ayudarte con tus consultas. ¡Éxitos!"
+    },
+    {
+      "index": 2,
+      "question": "¿Dónde están ubicadas las sedes de UADE?",
+      "reference": "UADE cuenta con sedes en Campus Buenos Aires (Lima 757), Belgrano, Recoleta y Campus Costa Argentina en Pinamar.",
+      "prediction": "UADE cuenta con varias sedes. Están ubicadas en el Campus Buenos Aires (Lima 757), Belgrano, Recoleta y el Campus Costa Argentina en Pinamar. Si necesitas más información sobre las sedes, no dudes en consultar el sitio oficial de UADE o contactarte con la Oficina de Alumnos. ¡Espero que esta información te sea útil!"
+    },
+    {
+      "index": 3,
+      "question": "¿Qué carreras ofrece UADE?",
+      "reference": "UADE ofrece carreras de grado, posgrados y programas ejecutivos en múltiples disciplinas como economía, ingeniería, diseño, derecho, salud, comunicación y más.",
+      "prediction": "UADE ofrece una amplia variedad de carreras de grado, posgrados y programas ejecutivos en disciplinas como economía, ingeniería, diseño, derecho, salud, comunicación y más. Si deseas más información o detalles específicos sobre cada carrera, te sugiero que contactes a la Oficina de Alumnos. ¡Estamos aquí para ayudarte!"
+    },
+    {
+      "index": 4,
+      "question": "¿Qué es el sistema de ingreso Pre-UADE?",
+      "reference": "El Pre-UADE es una modalidad de ingreso intensivo remoto en la que el postulante cursa una materia del plan de estudios de la carrera elegida para garantizar su ingreso.",
+      "prediction": "El Pre-UADE es una modalidad de ingreso intensivo remoto en la que cursas una materia del plan de estudios de la carrera elegida para garantizar tu ingreso. Es una excelente oportunidad para familiarizarte con el contenido académico y prepararte para el inicio de tus estudios. Si tienes más preguntas, no dudes en consultar con Ingreso UADE."
+    },
+    {
+      "index": 5,
+      "question": "¿Cuándo se dictan las clases del Pre-UADE?",
+      "reference": "Las clases del Pre-UADE se dictan generalmente dos veces por semana de 17:00 a 21:00 hs durante un período de dos meses.",
+      "prediction": "Las clases del Pre-UADE se dictan generalmente dos veces por semana de 17:00 a 21:00 hs durante un período de dos meses. Si necesitas más detalles, no dudes en preguntar. ¡Éxito en tu proceso de ingreso!"
+    },
+    {
+      "index": 6,
+      "question": "¿Cómo me inscribo al Pre-UADE?",
+      "reference": "La inscripción al Pre-UADE se realiza a través del sistema online habilitado por UADE durante los períodos establecidos.",
+      "prediction": "Para inscribirte al Pre-UADE, debes hacerlo a través del sistema online habilitado por UADE durante los períodos establecidos. Te recomiendo estar atento a las fechas y a la información disponible en la página oficial de la universidad. Si tienes más preguntas, no dudes en contactar a la Oficina de Alumnos. ¡Éxitos en tu inscripción!"
+    },
+    {
+      "index": 7,
+      "question": "¿Cuánto cuesta el Pre-UADE?",
+      "reference": "El costo del Pre-UADE puede variar según el año y la carrera. Se recomienda consultar con Ingreso UADE para obtener la información actualizada.",
+      "prediction": "El costo del Pre-UADE puede variar según el año y la carrera. Te recomiendo que consultes con Ingreso UADE para obtener la información actualizada. Puedes contactarlos a través de la página oficial de UADE. Si necesitas más ayuda, no dudes en preguntar."
+    },
+    {
+      "index": 8,
+      "question": "¿Qué documentos necesito para ingresar a UADE?",
+      "reference": "Para ingresantes se requiere presentar DNI (o equivalente), foto 4x4 digital y demás documentos solicitados según el formulario de admisión digital.",
+      "prediction": "Para ingresar a UADE, necesitas presentar tu DNI (o un documento equivalente), una foto 4x4 digital y los demás documentos que se indiquen en el formulario de admisión digital. Recuerda que todos los documentos deben ser enviados en formato digital, ya que no se reciben en formato físico. Si tienes más preguntas, no dudes en contactarte con la Oficina de Alumnos. ¡Éxito en tu proceso de admisión!"
+    },
+    {
+      "index": 9,
+      "question": "¿Puedo ingresar si soy estudiante extranjero?",
+      "reference": "Sí, UADE permite la admisión de estudiantes extranjeros. Se deben cumplir los requisitos de documentación y equivalencias que correspondan.",
+      "prediction": "¡Hola! Sí, podés ingresar a UADE si sos estudiante extranjero. Solo necesitas cumplir con los requisitos de documentación y equivalencias que correspondan. Si necesitas más información, no dudes en contactar a la Oficina de Alumnos. ¡Te deseo mucho éxito en tu proceso de ingreso!"
+    },
+    {
+      "index": 10,
+      "question": "¿La documentación debe presentarse en formato físico?",
+      "reference": "No, UADE no recibe documentos físicos. Todos los documentos deben presentarse en formato digital.",
+      "prediction": "No, la documentación no debe presentarse en formato físico. UADE solo acepta documentos en formato digital. Si tienes más consultas o necesitas ayuda adicional, no dudes en contactarnos."
+    },
+    {
+      "index": 11,
+      "question": "¿Qué es el calendario académico?",
+      "reference": "El calendario académico es el cronograma oficial de actividades como inicio de clases, parciales, exámenes y recesos.",
+      "prediction": "El calendario académico es el cronograma oficial de actividades que incluye el inicio de clases, los parciales, los exámenes y los recesos. Para consultar el calendario académico, podés dirigirte a la sección 'Calendario Académico' en el sitio oficial de UADE. Si necesitas más detalles, no dudes en preguntar."
+    },
+    {
+      "index": 12,
+      "question": "¿Dónde puedo consultar el calendario académico?",
+      "reference": "Podés consultar el calendario académico en la sección 'Calendario Académico' del sitio oficial de UADE.",
+      "prediction": "Podés consultar el calendario académico en la sección 'Calendario Académico' del sitio oficial de UADE. Allí encontrarás toda la información sobre actividades como el inicio de clases, parciales, exámenes y recesos. Si tienes más dudas, no dudes en preguntar. ¡Éxitos!"
+    },
+    {
+      "index": 13,
+      "question": "¿Qué son las equivalencias externas?",
+      "reference": "Las equivalencias externas permiten reconocer materias cursadas en otras instituciones para incorporarlas al plan de estudios de UADE.",
+      "prediction": "Las equivalencias externas son un mecanismo que permite reconocer materias que has cursado en otras instituciones y así incorporarlas al plan de estudios de UADE. Esto facilita la continuidad de tus estudios. Si necesitas más información o asistencia, te recomiendo contactar a la Oficina de Alumnos."
+    },
+    {
+      "index": 14,
+      "question": "¿Cuántas materias puedo presentar para equivalencias externas?",
+      "reference": "Se puede reconocer hasta el 50 % del total de materias de la carrera.",
+      "prediction": "Puedes presentar hasta el 50 % del total de materias de tu carrera para equivalencias externas en UADE. Si necesitas más información o asistencia adicional, no dudes en consultar a la Oficina de Alumnos. ¡Espero que esta información te sea útil!"
+    },
+    {
+      "index": 15,
+      "question": "¿Cuándo puedo iniciar el trámite de equivalencias externas?",
+      "reference": "El trámite se puede iniciar entre agosto y febrero para el primer cuatrimestre, o entre abril y julio para el segundo cuatrimestre.",
+      "prediction": "Puedes iniciar el trámite de equivalencias externas entre agosto y febrero para el primer cuatrimestre, o entre abril y julio para el segundo cuatrimestre. Si tienes alguna otra consulta, no dudes en preguntar. ¡Estoy aquí para ayudarte!"
+    },
+    {
+      "index": 16,
+      "question": "¿Tiene costo el trámite de equivalencias externas?",
+      "reference": "No, el trámite de equivalencias externas es gratuito.",
+      "prediction": "¡Hola! No, el trámite de equivalencias externas es gratuito. Si necesitas más información o asesoramiento, no dudes en contactar a la Oficina de Alumnos. Estoy aquí para ayudarte."
+    },
+    {
+      "index": 17,
+      "question": "¿Qué documentación debo presentar para equivalencias?",
+      "reference": "Debés adjuntar certificado analítico, programas de materias, bibliografía, carga horaria y legalizaciones correspondientes.",
+      "prediction": "Para iniciar el trámite de equivalencias, debés presentar el certificado analítico, los programas de materias, la bibliografía, la carga horaria y las legalizaciones correspondientes. Si tenés más preguntas, no dudes en escribir a la Oficina de Alumnos. ¡Éxitos!"
+    },
+    {
+      "index": 18,
+      "question": "¿Las materias con final pendiente pueden presentarse en equivalencias?",
+      "reference": "No; solo se aceptan materias aprobadas sin final pendiente.",
+      "prediction": "No, las materias con final pendiente no pueden presentarse en equivalencias. Solo se aceptan materias aprobadas sin final pendiente. Si necesitas más información o asistencia adicional, te recomiendo contactar a la Oficina de Alumnos. ¡Estoy aquí para ayudarte!"
+    },
+    {
+      "index": 19,
+      "question": "¿Qué ocurre si la documentación legalizada difiere de la presentada inicialmente?",
+      "reference": "El dictamen puede variar si las versiones legalizadas difieren de las presentadas preliminarmente.",
+      "prediction": "Si la documentación legalizada difiere de la presentada inicialmente, el dictamen puede variar. Es importante que toda la documentación coincida para evitar inconvenientes en el proceso de equivalencias. Si tenés más preguntas, no dudes en contactar a la Oficina de Alumnos. ¡Estamos aquí para ayudarte!"
+    },
+    {
+      "index": 20,
+      "question": "¿Qué modalidades de cursada tienen las equivalencias?",
+      "reference": "Se pueden realizar por asignaturas individuales o por grupos de materias.",
+      "prediction": "Las modalidades de cursada para las equivalencias en UADE son por asignaturas individuales o por grupos de materias. Si necesitas más información o tienes alguna otra consulta, no dudes en preguntar. ¡Estoy aquí para ayudarte!"
+    },
+    {
+      "index": 21,
+      "question": "¿Cómo se evalúan las materias en UADE?",
+      "reference": "Las materias pueden tener evaluación mediante parciales, trabajos prácticos y examen final.",
+      "prediction": "Las materias en UADE se evalúan a través de parciales, trabajos prácticos y un examen final. Si tienes más preguntas sobre el proceso de evaluación o cualquier otra consulta, no dudes en preguntar. ¡Estoy aquí para ayudarte!"
+    },
+    {
+      "index": 22,
+      "question": "¿Cuál es el criterio de aprobación de la cursada?",
+      "reference": "Se exige un mínimo del 75 % de asistencia y aprobar los parciales o trabajos según el programa de la materia.",
+      "prediction": "Para aprobar la cursada en UADE, se exige un mínimo del 75 % de asistencia y es necesario aprobar los parciales o trabajos según el programa de la materia. Si necesitas más detalles o tienes alguna otra consulta, no dudes en preguntar."
+    },
+    {
+      "index": 23,
+      "question": "¿Qué pasa si no apruebo la cursada?",
+      "reference": "Si no aprobás la cursada, no podés rendir el examen final salvo casos especiales establecidos por normativa.",
+      "prediction": "Si no aprobás la cursada, no podés rendir el examen final, salvo en casos especiales establecidos por la normativa. Es importante que lleves un seguimiento de tu rendimiento durante el curso. Si necesitás más información o asesoramiento, te recomiendo contactar a la Oficina de Alumnos. ¡Mucha suerte!"
+    },
+    {
+      "index": 24,
+      "question": "¿Qué es la modalidad No Regular?",
+      "reference": "Permite cursar una asignatura sin asistir presencialmente, bajo justificativos válidos y previa solicitud.",
+      "prediction": "La modalidad No Regular permite cursar una asignatura sin necesidad de asistir presencialmente, siempre y cuando presentes justificativos válidos y realices una solicitud previa. Si deseas más información o tienes dudas específicas, no dudes en contactar a la Oficina de Alumnos. ¡Estoy aquí para ayudarte!"
+    },
+    {
+      "index": 25,
+      "question": "¿Puedo cursar en modalidad virtual?",
+      "reference": "Sí, UADE ofrece modalidades virtuales y online para algunas carreras y asignaturas.",
+      "prediction": "¡Hola! Sí, en UADE puedes cursar en modalidad virtual. La institución ofrece modalidades virtuales y online para algunas carreras y asignaturas. Si necesitas más información específica, te recomiendo contactar a la Oficina de Alumnos."
+    },
+    {
+      "index": 26,
+      "question": "¿Qué pasa si desapruebo un examen?",
+      "reference": "Podés volver a rendir el examen en los turnos siguientes, según la normativa vigente.",
+      "prediction": "Si desaprobás un examen, podés volver a rendirlo en los turnos siguientes, siempre y cuando te ajustes a la normativa vigente. Si necesitás más detalles o asistencia, no dudes en contactar a la Oficina de Alumnos. ¡Éxitos en tus estudios!"
+    },
+    {
+      "index": 27,
+      "question": "¿Cómo consulto mis notas?",
+      "reference": "Podés consultar tus notas en WebCampus, dentro de la sección Académico → Consultas → Notas.",
+      "prediction": "Podés consultar tus notas en WebCampus. Solo tenés que ir a la sección Académico → Consultas → Notas. Si necesitas más ayuda, no dudes en preguntar."
+    },
+    {
+      "index": 28,
+      "question": "¿Cuándo se publican las notas?",
+      "reference": "Las notas se publican en la plataforma WebCampus dentro de las 48 horas hábiles posteriores al examen.",
+      "prediction": "Las notas se publican en la plataforma WebCampus dentro de las 48 horas hábiles posteriores al examen. Puedes consultarlas en WebCampus, en la sección Académico → Consultas → Notas. Si tienes más preguntas, no dudes en consultar."
+    },
+    {
+      "index": 29,
+      "question": "¿Qué es WebCampus?",
+      "reference": "WebCampus es la plataforma académica de UADE donde los estudiantes consultan materias, inscripciones, notas y trámites.",
+      "prediction": "WebCampus es la plataforma académica de UADE donde podés consultar materias, inscripciones, notas y realizar trámites. Es una herramienta muy útil para gestionar tu vida académica de manera eficiente. Si tenés más preguntas, no dudes en consultarme."
+    },
+    {
+      "index": 30,
+      "question": "¿Dónde hago la inscripción de materias?",
+      "reference": "La inscripción de materias se realiza a través de WebCampus dentro del período habilitado por la universidad.",
+      "prediction": "La inscripción de materias se realiza a través de WebCampus dentro del período habilitado por la universidad. Asegúrate de estar atento a las fechas de inscripción para que puedas completar tu trámite a tiempo. Si necesitas más ayuda, no dudes en preguntar. ¡Éxitos en tus estudios!"
+    },
+    {
+      "index": 31,
+      "question": "¿Qué son los Minors?",
+      "reference": "Los Minors son conjuntos de materias que podés cursar dentro de tu carrera para explorar disciplinas complementarias.",
+      "prediction": "Los Minors son conjuntos de materias que podés cursar dentro de tu carrera para explorar disciplinas complementarias. Son una excelente opción para ampliar tu formación. Recuerda que, aunque son opcionales, te permiten diversificar tus conocimientos. Si tenés más preguntas, no dudes en consultar a la Oficina de Alumnos."
+    },
+    {
+      "index": 32,
+      "question": "¿Cómo me inscribo en un Minor?",
+      "reference": "Podés inscribirte mediante WebCampus como cualquier otra asignatura durante el período de inscripción.",
+      "prediction": "Para inscribirte en un Minor, puedes hacerlo a través de WebCampus, de la misma manera que te inscribes en cualquier otra asignatura, durante el período de inscripción. Si necesitas más ayuda o tienes alguna otra consulta, no dudes en contactar a la Oficina de Alumnos. ¡Éxito con tu inscripción!"
+    },
+    {
+      "index": 33,
+      "question": "¿Puedo hacer un Minor desde el extranjero?",
+      "reference": "Sí, podés cursar materias del Minor desde el extranjero mediante convenios internacionales o equivalencias.",
+      "prediction": "¡Sí, podés cursar materias del Minor desde el extranjero! Esto es posible a través de convenios internacionales o equivalencias. Si necesitas más información o tenés alguna otra consulta, no dudes en contactar a la Oficina de Alumnos."
+    },
+    {
+      "index": 34,
+      "question": "¿Es obligatorio hacer un Minor?",
+      "reference": "No, los Minors son opcionales y están pensados para ampliar tu formación.",
+      "prediction": "No, los Minors son opcionales y están pensados para ampliar tu formación. Si decidís hacer uno, al completarlo recibirás un certificado junto con tu título de grado. Si tenés más dudas, no dudes en preguntar. ¡Éxitos en tu camino educativo!"
+    },
+    {
+      "index": 35,
+      "question": "¿Puedo cambiar de Minor?",
+      "reference": "Sí, podés cambiar de Minor hasta dos veces durante tu carrera.",
+      "prediction": "¡Hola! Sí, podés cambiar de Minor hasta dos veces durante tu carrera. Si necesitas más información o asistencia, no dudes en consultarlo. ¡Éxitos en tu formación!"
+    },
+    {
+      "index": 36,
+      "question": "¿Se entrega un certificado por completar un Minor?",
+      "reference": "Sí, al completar un Minor recibís un certificado junto con tu título de grado.",
+      "prediction": "¡Hola! Sí, al completar un Minor recibirás un certificado junto con tu título de grado. Si tienes más preguntas sobre el proceso o la inscripción, no dudes en consultarme. ¡Estoy aquí para ayudarte!"
+    },
+    {
+      "index": 37,
+      "question": "¿Puedo cursar en el extranjero?",
+      "reference": "Sí, UADE tiene convenios con universidades internacionales para realizar intercambios académicos.",
+      "prediction": "¡Hola! Sí, podés cursar en el extranjero, ya que UADE tiene convenios con universidades internacionales para realizar intercambios académicos. También tenés la opción de hacerlo bajo la modalidad Freemover, gestionando los trámites por tu cuenta si elegís una universidad sin convenio. Si necesitás más información o asistencia, te recomiendo contactar a la Oficina de Alumnos. ¡Éxitos!"
+    },
+    {
+      "index": 38,
+      "question": "¿Puedo realizar intercambio con universidades sin convenio?",
+      "reference": "Sí, podés hacerlo bajo la modalidad Freemover, gestionando los trámites por tu cuenta.",
+      "prediction": "¡Hola! Sí, podés realizar intercambio con universidades sin convenio bajo la modalidad Freemover, gestionando los trámites por tu cuenta. Si necesitás más información o asistencia, te recomiendo contactar a la Oficina de Alumnos. ¡Éxitos en tu intercambio!"
+    },
+    {
+      "index": 39,
+      "question": "¿Debo acreditar un nivel de inglés para intercambio?",
+      "reference": "Dependiendo del país y la universidad de destino, puede solicitarse un nivel mínimo de inglés.",
+      "prediction": "Sí, dependiendo del país y la universidad de destino, puede solicitarse un nivel mínimo de inglés para poder realizar el intercambio. Te sugiero que tengas esto en cuenta al elegir tu destino. Si tenés más preguntas, no dudes en comunicarte con la Oficina de Alumnos."
+    },
+    {
+      "index": 40,
+      "question": "¿Qué gastos cubre un intercambio académico?",
+      "reference": "Generalmente se mantienen los aranceles de UADE, pero los gastos de viaje y alojamiento corren por cuenta del estudiante.",
+      "prediction": "Generalmente, los gastos que cubre un intercambio académico en UADE son solo los aranceles de la institución. Sin embargo, los gastos de viaje y alojamiento corren por cuenta del estudiante. Si tienes más preguntas o necesitas más información, te recomiendo contactar a la Oficina de Alumnos."
+    },
+    {
+      "index": 41,
+      "question": "¿UADE ofrece becas?",
+      "reference": "Sí, UADE ofrece becas académicas, deportivas y al mérito, entre otras.",
+      "prediction": "¡Hola! Sí, UADE ofrece becas académicas, deportivas y al mérito, entre otras. Si deseas más información o tienes alguna consulta específica sobre becas, puedes escribir a becasalumnos@uade.edu.ar. Estoy aquí para ayudarte con cualquier otra pregunta que tengas."
+    },
+    {
+      "index": 42,
+      "question": "¿Quiénes pueden acceder a las Becas al Mérito?",
+      "reference": "Estudiantes con excelente desempeño académico que cumplan los requisitos establecidos por UADE.",
+      "prediction": "Pueden acceder a las Becas al Mérito los estudiantes que tengan un excelente desempeño académico y que cumplan con los requisitos establecidos por UADE. Si necesitas más detalles sobre los requisitos específicos, no dudes en consultar a la Oficina de Alumnos. ¡Éxitos en tu búsqueda!"
+    },
+    {
+      "index": 43,
+      "question": "¿Qué cubren las Becas al Mérito?",
+      "reference": "Cubren el derecho de admisión, la matrícula y las cuotas del año de cursada.",
+      "prediction": "Las Becas al Mérito cubren el derecho de admisión, la matrícula y las cuotas del año de cursada. Si tenés un excelente desempeño académico y cumples con los requisitos establecidos por UADE, podrías ser elegible para acceder a esta beca. Si necesitás más información, no dudes en contactar a la Oficina de Alumnos."
+    },
+    {
+      "index": 44,
+      "question": "¿Cuándo es el período de inscripción para la Beca al Mérito?",
+      "reference": "Generalmente entre julio y septiembre, dependiendo de la convocatoria vigente.",
+      "prediction": "El período de inscripción para la Beca al Mérito generalmente se lleva a cabo entre julio y septiembre, dependiendo de la convocatoria vigente. Te recomiendo estar atento a las fechas específicas que se anunciarán. Si necesitas más información, no dudes en contactar a la Oficina de Alumnos. ¡Éxitos en tus estudios!"
+    },
+    {
+      "index": 45,
+      "question": "¿Se puede renovar la beca?",
+      "reference": "Sí, puede renovarse si mantenés un buen rendimiento académico y cumplís con los requisitos establecidos.",
+      "prediction": "¡Hola! Sí, se puede renovar la beca si mantenés un buen rendimiento académico y cumplís con los requisitos establecidos. Si necesitas más información, no dudes en contactar a la Oficina de Alumnos. ¡Suerte!"
+    },
+    {
+      "index": 46,
+      "question": "¿Dónde consulto por becas?",
+      "reference": "Podés escribir a becasalumnos@uade.edu.ar para realizar consultas o solicitar información.",
+      "prediction": "Podés consultar por becas escribiendo a becasalumnos@uade.edu.ar. Allí podrán ayudarte con cualquier consulta o brindarte información adicional que necesites. ¡No dudes en contactarlos!"
+    },
+    {
+      "index": 47,
+      "question": "¿Qué son las materias MRI?",
+      "reference": "Son materias Regulares Intensivas que se dictan en periodos cortos para adelantar o recuperar asignaturas.",
+      "prediction": "Las materias MRI son materias Regulares Intensivas que se dictan en periodos cortos para adelantar o recuperar asignaturas. Esto te permite gestionar tu tiempo de estudio de manera más flexible. Si tienes más preguntas sobre estas materias o cómo funcionan, no dudes en preguntar. ¡Estoy aquí para ayudarte!"
+    },
+    {
+      "index": 48,
+      "question": "¿Cómo me inscribo en las materias MRI?",
+      "reference": "Podés inscribirte de forma online dentro de las fechas habilitadas por la universidad.",
+      "prediction": "Para inscribirte en las materias MRI, debes hacerlo de forma online dentro de las fechas habilitadas por la universidad. Asegúrate de estar atento a esos plazos para completar tu inscripción. Si necesitas más información o asistencia, te recomiendo que contactes a la Oficina de Alumnos. ¡Éxito en tu inscripción!"
+    },
+    {
+      "index": 49,
+      "question": "¿Las materias MRI incluyen alojamiento?",
+      "reference": "En algunos casos se ofrece alojamiento en el Campus Costa Argentina, sujeto a disponibilidad.",
+      "prediction": "En algunos casos, las materias MRI pueden incluir alojamiento en el Campus Costa Argentina, pero esto está sujeto a disponibilidad. Si necesitas más información o detalles específicos, te recomiendo contactar a la Oficina de Alumnos para obtener asistencia. ¡Estoy aquí para ayudarte con lo que necesites!"
+    },
+    {
+      "index": 50,
+      "question": "¿Qué es UADE Ayuda al Estudiante?",
+      "reference": "Es un espacio de orientación donde podés plantear inquietudes, recibir asesoramiento y participar en talleres de apoyo.",
+      "prediction": "UADE Ayuda al Estudiante es un espacio de orientación donde podés plantear inquietudes, recibir asesoramiento y participar en talleres de apoyo. Si necesitás más información o deseas solicitar una entrevista, podés escribir a ayues@uade.edu.ar. Estamos aquí para ayudarte."
+    },
+    {
+      "index": 51,
+      "question": "¿Cómo me comunico con Ayuda al Estudiante?",
+      "reference": "Podés escribir a ayues@uade.edu.ar para solicitar orientación o entrevistas.",
+      "prediction": "Para comunicarte con Ayuda al Estudiante, podés escribir a ayues@uade.edu.ar. Allí podrás solicitar orientación y discutir cualquier inquietud que tengas. ¡No dudes en contactarlos!"
+    },
+    {
+      "index": 52,
+      "question": "¿Dónde puedo ver mi historia académica?",
+      "reference": "Tu historia académica está disponible en WebCampus, en la sección Académico → Historia Académica.",
+      "prediction": "Puedes ver tu historia académica en WebCampus, en la sección Académico → Historia Académica. Si necesitas más ayuda, no dudes en preguntar. ¡Éxito en tus estudios!"
+    },
+    {
+      "index": 53,
+      "question": "¿Qué hago si olvido mi contraseña de WebCampus?",
+      "reference": "Podés recuperarla desde la página de inicio de sesión haciendo clic en '¿Olvidaste tu contraseña?'.",
+      "prediction": "Si olvidaste tu contraseña de WebCampus, podés recuperarla desde la página de inicio de sesión haciendo clic en '¿Olvidaste tu contraseña?'. Esto te permitirá restablecerla de forma sencilla. Si necesitas más ayuda, no dudes en contactar a la Oficina de Alumnos."
+    },
+    {
+      "index": 54,
+      "question": "¿Dónde puedo consultar los aranceles?",
+      "reference": "Los aranceles vigentes se consultan en la sección de Ingreso del sitio oficial de UADE o en la Oficina de Alumnos.",
+      "prediction": "Podés consultar los aranceles vigentes en la sección de Ingreso del sitio oficial de UADE o acercarte a la Oficina de Alumnos. Si necesitás ayuda adicional, no dudes en preguntar. ¡Estamos para ayudarte!"
+    },
+    {
+      "index": 55,
+      "question": "¿Cómo solicito mi certificado de alumno regular?",
+      "reference": "Podés solicitarlo en WebCampus, en la sección Trámites → Certificados → Alumno Regular.",
+      "prediction": "Para solicitar tu certificado de alumno regular, podés hacerlo a través de WebCampus. Solo tenés que ir a la sección Trámites y luego a Certificados, donde encontrarás la opción de Alumno Regular. Si necesitas ayuda adicional, no dudes en contactar a la Oficina de Alumnos. ¡Espero que esto te sea útil!"
+    },
+    {
+      "index": 56,
+      "question": "¿Cómo solicito una constancia de materias aprobadas?",
+      "reference": "Desde WebCampus, en Trámites → Certificados → Materias Aprobadas.",
+      "prediction": "Para solicitar una constancia de materias aprobadas, debes ingresar a WebCampus y dirigirte a la sección Trámites → Certificados → Materias Aprobadas. Si necesitas más ayuda, no dudes en consultar. ¡Éxitos en tu gestión!"
+    },
+    {
+      "index": 57,
+      "question": "¿Dónde puedo ver mi calendario de exámenes?",
+      "reference": "En WebCampus, dentro de la sección Académico → Exámenes.",
+      "prediction": "Podés ver tu calendario de exámenes en WebCampus, dentro de la sección Académico → Exámenes. Si necesitas más ayuda, no dudes en preguntar. ¡Éxitos en tus exámenes!"
+    },
+    {
+      "index": 58,
+      "question": "¿Qué pasa si no puedo asistir a un examen?",
+      "reference": "Debés justificar tu inasistencia en la Oficina de Alumnos con la documentación correspondiente.",
+      "prediction": "Si no podés asistir a un examen, debés justificar tu inasistencia en la Oficina de Alumnos presentando la documentación correspondiente. Es importante que lo hagas a la brevedad posible. Si necesitás más información, no dudes en contactarlos."
+    },
+    {
+      "index": 59,
+      "question": "¿Puedo cambiarme de carrera dentro de UADE?",
+      "reference": "Sí, podés solicitar el cambio de carrera a través de la Oficina de Alumnos o por WebCampus.",
+      "prediction": "¡Claro! Sí, podés solicitar el cambio de carrera dentro de UADE. Para hacerlo, podés acercarte a la Oficina de Alumnos o gestionar el trámite a través de WebCampus. Si tenés más preguntas, no dudes en preguntar."
+    },
+    {
+      "index": 60,
+      "question": "¿UADE ofrece orientación vocacional?",
+      "reference": "Sí, el área de Orientación Vocacional brinda entrevistas individuales y talleres grupales para acompañar tu elección de carrera.",
+      "prediction": "¡Sí, UADE ofrece orientación vocacional! El área de Orientación Vocacional brinda entrevistas individuales y talleres grupales para acompañarte en tu elección de carrera. Si necesitas más información o quieres agendar una entrevista, te recomiendo contactar a la Oficina de Alumnos. ¡Éxitos en tu búsqueda!"
+    }
+  ]
+}

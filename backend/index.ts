@@ -17,7 +17,7 @@ const state: GlobalState = {
 
 async function initialize() {
     try {
-        // 1. Crear instancia única de ChatOllama
+        // 1. Crear instancia única de LLM (OpenAI gpt-4o-mini)
         state.llm = createOllamaInstance();
 
         // 2. Cargar MCP servers y tools

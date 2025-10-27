@@ -1,5 +1,4 @@
 import { Tool } from "@langchain/core/tools";
-import { ChatOllama } from "@langchain/ollama";
 import type { MCPClientWithTools } from "../../types.js";
 
 export {
@@ -18,11 +17,11 @@ export type QueryIntent = {
 
 export interface GlobalState {
     clients: MCPClientWithTools[];
-    modelWithTools: ReturnType<ChatOllama["bindTools"]> | null;
+    modelWithTools: any | null;
     tools: Tool[];
     vectorStore: any;
     ragChain: any;
-    llm: ChatOllama | null;
+    llm: any | null;
 }
 
 export interface ToolSelection {
